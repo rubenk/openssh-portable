@@ -157,6 +157,8 @@
 #endif
 #include <openssl/dh.h>
 
+#include "openssl-compat.h"
+
 #ifndef HAVE_DSA_GET0_PQG
 void
 DSA_get0_pqg(const DSA *d, const BIGNUM **p, const BIGNUM **q, const BIGNUM **g)
